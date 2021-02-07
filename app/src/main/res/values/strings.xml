@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name" translatable="false">TN eScooter</string>
+    <string name="search_again">Search again</string>
+    <string name="searching_text">Searching</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="password_six_digit">Please enter the six-digit password, the default password 000000.</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="reset_password">Reset your password</string>
+    <string name="connect">Connect</string>
+    <string name="settings">Settings</string>
+    <string name="more">More</string>
+    <string name="home">Home</string>
+    <string name="username">"UserName "</string>
+    <string name="about_us_title" translatable="false">Terasys-Network</string>
+    <string name="about_us_sub_title">Services and products with Swiss quality</string>
+    <string name="about_us_content">
+        We have seen ourselves as a partner-like service provider for our customers since 2004 and do so with passion and Swiss quality.\n\n
+        This app is used to control and manage your e-scooter. When developing this app, we also thought about which additional functions might be of interest to our customers.\n\n
+        We have incorporated the transfer of the most important data to our website directly into your user profile in the app.\n\n
+        The data includes the KM status (IOS/Android Store user). This only serves as a simple and additional protection against theft. If the scooter is used without the app, no data is sent to our database. The scooter should always be locked with the app and secured with a lock.\n\n
+        So that we can send you important information and offers automatically and depending on the mileage, the mileage of your scooter is synchronized in our database and in your profile. So we can inform you if e.g. new tires or brakes are required. This is primarily for your safety.\n\n
+        The app is constantly being developed and feedback / suggestions are very welcome. You are very welcome to let us know.\n\n
+        We wish you a good trip and a lot of fun with your e-scooter.\n\n
+        Your Terasys Network Team\n\n
+    </string>
+    <string name="email_to">Email to :</string>
+    <string name="email_from">User Name :</string>
+    <string name="subject">Subject :</string>
+    <string name="customer_services">Customer Services</string>
+    <string name="message">Message :</string>
+    <string name="send">Send</string>
+    <string name="search_device">Search Device</string>
+    <string name="odo" translatable="false">ODO</string>
+    <string name="street">Street</string>
+    <string name="zip" translatable="false">Zip</string>
+    <string name="change_avatar">Avatar</string>
+    <string name="town">Town</string>
+    <string name="s_n" translatable="false">S/N</string>
+    <string name="version_information">Version Information</string>
+    <string name="rssi" translatable="false">rssi</string>
+    <string name="name">Name</string>
+    <string name="zero_start" translatable="false">Zero-Start</string>
+    <string name="self_diagnostics">Self-Diagnostics</string>
+    <string name="change_bt_password">Change BT Password</string>
+    <string name="change_bt_name">Change BT Name</string>
+    <string name="switch_between">Unit of measurement</string>
+    <string name="push_start" translatable="false">Push-Start</string>
+    <string name="criuse_control">Cruise Control</string>
+    <string name="startup_setting">StartUp Setting</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="email">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="ebike_check_acceleration">Acceleration</string>
+    <string name="ebike_check_brake">Brake</string>
+    <string name="ebike_check_current">Current</string>
+    <string name="ebike_check_motor_phase">Motor Phase</string>
+    <string name="ebike_setting_cyclo">Set the Brightness of Screen</string>
+    <string name="mcx03_self_check01">Controller</string>
+    <string name="mcx03_self_check02">Hall Sensor</string>
+    <string name="mcx03_self_check03">Battery Voltage</string>
+    <string name="mcx03_self_check04">Phase Circuit of Motor</string>
+    <string name="mcx03_self_check05">Accelerator</string>
+    <string name="communication_text">Communication</string>
+    <string name="self_check01">Phase Circuit of Motor</string>
+    <string name="self_check02">Battery</string>
+    <string name="self_check03">Accelerator</string>
+    <string name="self_check04">Hall Sensor</string>
+    <string name="homefragment_start_my_ride">Start</string>
+    <string name="ebike_check_hall">Hall Sensor</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="about">About</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="_000" translatable="false">000</string>
+    <string name="where_to">where to?</string>
+    <string name="km" translatable="false">km</string>
+    <string name="mile" translatable="false">mile</string>
+    <string name="kmh_mph" translatable="false">KMH/MPH</string>
+    <string name="_0" translatable="false">0%</string>
+    <string name="back">Back</string>
+    <string name="voice_hint">Your mobile phone does not support voice search function, click OK to download and install Google Voice Search software. You can also search for Voice Search in each app store to download and install.</string>
+    <string name="blue_name_text">Enter Bluetooth Name</string>
+    <string name="blue_pwd_empty_toast">password can not be empty.</string>
+    <string name="modity_success_hint">Set successfully!</string>
+    <string name="empty_name">The name can not be empty.</string>
+    <string name="name_too_long">Name too long.</string>
+    <string name="name_too_short">Name too short.</string>
+    <string name="blt_set_psw">New Password</string>
+    <string name="blt_set_psw_old">Old Password</string>
+    <string name="blt_set_repassword">Please enter a 6 sizes password</string>
+    <string name="blt_set_res">Confirm Password</string>
+    <string name="validation_error_password_not_pare">The old password is wrong.</string>
+    <string name="modity_success_toast">Successfully modified!</string>
+    <string name="empty_pwd">Please enter a new password.</string>
+    <string name="pwd_too_long">The password must be no longer than 6 characters.</string>
+    <string name="pwd_too_short">The password must contain at least 6 characters</string>
+    <string name="pwd_not_match">The old password is wrong.</string>
+    <string name="turn_on_bluetootn">Turn on the bluetooth</string>
+    <string name="login_empty_email">Please enter your email.</string>
+    <string name="login_empty_pwd">Please enter your password.</string>
+    <string name="login_invalid_email">Please enter your valid email.</string>
+    <string name="share">Share</string>
+    <string name="request_error">Oops! Something went wrong.</string>
+    <string name="logoff">LogOff</string>
+    <string name="confirm">Confirm</string>
+    <string name="color_preview">Color Preview</string>
+    <string name="car_lamp_setting">Headlight setting</string>
+    <string name="single_model">Monochrome Mode</string>
+    <string name="rgb_model">RGB Mode</string>
+    <string name="songxiu">Return or call maintenance</string>
+    <string name="checking">Checking</string>
+    <string name="check_again">Check again</string>
+    <string name="fault">Fault</string>
+    <string name="normal">Normal</string>
+    <string name="all_right">All going well</string>
+    <string name="car_scooter">Scooter throttle</string>
+    <string name="car_brake">Brake</string>
+    <string name="holl_sensor">Hall sensor</string>
+    <string name="hardware">Car body hardware</string>
+    <string name="commu_devices">Communication equipment</string>
+    <string name="circurt_board">Circuit board</string>
+    <string name="login_empty_sn">Please enter your scooter serial number.</string>
+    <string name="wrong_serial_number">Serial number is invalid, Please contact with administrator.</string>
+    <string name="login_failed">Invalid User name or Password.</string>
+    <string name="connect_failed">Connect failed</string>
+    <string name="no_bluetooth">cell phone haven\'t bluetooth device</string>
+    <string name="connecting">Connecting</string>
+    <string name="quit">Quit</string>
+    <string name="device_connected">Bluetooth connected</string>
+    <string name="txt_uploading">Uploading</string>
+    <string name="select_image">Select Image From Gallery</string>
+    <string name="upload_success">Avatar uploaded</string>
+    <string name="upload_error">Avatar upload failed</string>
+    <string name="connect_err">Can\'t connect to bluetooth device</string>
+    <string name="loading">Loading</string>
+    <string name="def_email" translatable="false">info@terasys-network.com</string>
+    <string name="send_success">Mail Sent.</string>
+    <string name="invalid_field">Please input valid fields</string>
+    <string name="support_mail" translatable="false">support@terasys-network.com</string>
+    <string name="version" translatable="false">Version: %1$s</string>
+    <string name="speaker_direction_to_text">Directions to</string>
+    <string name="speaker_call_text">Call</string>
+    <string name="speaker_sms_text">Text</string>
+    <string name="speaker_last_song_text">Go to last song</string>
+    <string name="speaker_last_text">Last</string>
+    <string name="speaker_next_song_text">Go to next song</string>
+    <string name="speaker_next_text">Next</string>
+    <string name="speaker_no_check_text">Sorry, I didn\'t detect your thoughts.</string>
+    <string name="speaker_pause_music_text">Pause music</string>
+    <string name="speaker_play_music_text">Play music</string>
+    <string name="recognizer_description_text">Try saying...</string>
+    <string name="chain">Chain</string>
+    <string name="target_position">Target Position</string>
+    <string name="quit_this_ride_text">End of navigation!</string>
+</resources>

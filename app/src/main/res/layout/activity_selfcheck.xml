@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/def_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header"/>
+    <include layout="@layout/layout_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="160sp"
+            android:layout_height="160sp"
+            android:src="@drawable/check_image"
+            android:contentDescription="@string/todo" />
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/primary_color"
+            android:layout_gravity="center"
+            android:id="@+id/check_percent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/liner_check_spark2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ebike_check_hall" />
+
+                    <ImageView
+                        android:id="@+id/check_result1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/check_noraml_icon"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffe2e2e2" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ebike_check_current" />
+
+                    <ImageView
+                        android:id="@+id/check_result2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffe2e2e2" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ebike_check_motor_phase" />
+
+                    <ImageView
+                        android:id="@+id/check_result3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffe2e2e2" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ebike_check_acceleration" />
+
+                    <ImageView
+                        android:id="@+id/check_result4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffe2e2e2" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ebike_check_brake" />
+
+                    <ImageView
+                        android:id="@+id/check_result5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffe2e2e2" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/liner_check_chirrey_q5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check01" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/mcx03_check_result1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check02" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/mcx03_check_result2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check03" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/mcx03_check_result3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check04" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/mcx03_check_result4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check05" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/mcx03_check_result5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/liner_check_escooter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebike_check_brake" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/communication_text" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check01" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check04" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check03" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mcx03_self_check05" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1dp" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="50sp" android:layout_marginLeft="30sp" android:layout_marginRight="30sp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ebike_check_hall" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/escooter_check_result7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View
+                    android:background="#ffe2e2e2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/liner_check_other"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/self_check01"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:id="@+id/other_check_result1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View
+                    android:background="#ffe2e2e2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/self_check02"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:id="@+id/other_check_result2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View
+                    android:background="#ffe2e2e2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/self_check03"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:id="@+id/other_check_result3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View
+                    android:background="#ffe2e2e2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginRight="30sp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/self_check04"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:id="@+id/other_check_result4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/todo" />
+                </RelativeLayout>
+                <View
+                    android:background="#ffe2e2e2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/check_start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="40sp"
+                android:text="@string/homefragment_start_my_ride"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

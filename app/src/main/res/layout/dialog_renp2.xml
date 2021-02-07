@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="260.0dip" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_warming" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blt_set_psw" />
+    </LinearLayout>
+    <View android:background="#000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blt_set_psw_old" />
+        <EditText android:id="@+id/tv_content_p0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="textPassword" />
+    </LinearLayout>
+    <View android:background="#000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blt_set_psw" />
+        <EditText android:id="@+id/tv_content_p1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="textPassword" />
+    </LinearLayout>
+    <View android:background="#000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blt_set_res" />
+        <EditText android:id="@+id/tv_content_p2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="textPassword" />
+    </LinearLayout>
+    <View android:background="#000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@+id/blt_set_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <View android:background="#000000" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:id="@+id/ble_set_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/def_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header"/>
+
+    <include
+        layout="@layout/layout_toolbar"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/search_result_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:src="@drawable/serach_ing_icon"
+        android:contentDescription="@string/todo" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="260sp"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:layout_weight="1.0"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/searching_again_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20sp"
+        android:background="@color/primary_color"
+        android:text="@string/search_again"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible" />
+</LinearLayout>

@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/def_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/main_arrow_down_btn"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="4sp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_arrow_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_header" />
+
+        <LinearLayout
+            android:id="@+id/lay_speed_metro"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/lay_speedmetor"
+                android:layout_width="match_parent"
+                android:layout_height="440sp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/speedmetor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:gravity="center|bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kmh_mph"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:id="@+id/mainSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/layout_round"
+                            android:fontFamily="@font/open_24"
+                            android:paddingHorizontal="10dp"
+                            android:paddingBottom="6dp"
+                            android:scaleX="1.6"
+                            android:text="10.5"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="38sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="14dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginTop="-18sp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:rotation="270">
+
+                                <TextView
+                                    android:id="@+id/battery_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="90%"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:textStyle="italic" />
+
+                                <ImageView
+                                    android:id="@+id/img_battery"
+                                    android:layout_width="50sp"
+                                    android:layout_height="28sp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_battery_80"
+                                    android:textAlignment="center" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|left"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_mode_view"
+                                android:layout_width="60sp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_mode1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="-16sp"
+                        android:layout_weight="3"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="108sp"
+                            android:layout_height="65sp"
+                            android:layout_marginLeft="-3sp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/trip_odo_back"
+                            android:gravity="top"
+                            android:orientation="vertical"
+                            android:paddingEnd="4sp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/mainTrip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="10sp"
+                                    android:fontFamily="@font/open_24"
+                                    android:text="0000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/mainOdo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10sp"
+                                    android:fontFamily="@font/open_24"
+                                    android:text="0000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/mainRemaining"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/open_24"
+                                    android:text="0000"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/mainRemainingPer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/myriad_pro"
+                                    android:text="@string/mile"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="12sp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_pointer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pointer" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20sp">
+
+            <ImageView
+                android:id="@+id/img_btn_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_mode" />
+
+            <ImageView
+                android:id="@+id/img_btn_headlight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_headlight_off" />
+
+            <ImageView
+                android:id="@+id/img_btn_lock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_lock" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <include layout="@layout/layout_navbar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:paddingTop="65sp"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/google_map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="60sp">
+
+                <LinearLayout
+                    android:id="@+id/dashboard_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:background="@drawable/dashboard_search_bag"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp">
+
+                    <ImageView
+                        android:id="@+id/img_voice"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/speak_icon" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txt_autocomplete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="@string/where_to"
+                        android:textColor="@color/primary_color"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_trash"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_baseline_delete_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout_dash"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/polygon"
+                android:paddingTop="14sp">
+
+                <FrameLayout
+                    android:id="@+id/lay_map_speedmetor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/speedmetor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:gravity="center|bottom"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/kmh_mph"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                android:textStyle="italic" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/layout_round"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="7sp"
+                                android:paddingVertical="1dp">
+
+                                <TextView
+                                    android:id="@+id/mapmainSpeed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/open_24"
+                                    android:paddingHorizontal="14dp"
+                                    android:paddingBottom="3sp"
+                                    android:scaleX="1.8"
+                                    android:text="10.5"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="-10sp"
+                            android:layout_weight="2"
+                            android:baselineAligned="false"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="14dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|right"
+                                    android:layout_marginTop="-12sp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/mainModeText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/img_map_battery"
+                                        android:layout_width="35sp"
+                                        android:layout_height="35sp"
+                                        android:contentDescription="TODO"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/ic_battery_80"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="4"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_map_mode_view"
+                                    android:layout_width="30sp"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/todo"
+                                    android:src="@drawable/ic_mode1" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="-5sp"
+                            android:layout_weight="2"
+                            android:gravity="center|top"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="80sp"
+                                android:layout_height="40sp"
+                                android:background="@drawable/map_trip_odo_back"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingHorizontal="4sp">
+
+                                    <TextView
+                                        android:id="@+id/mapmainTrip"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10sp"
+                                        android:fontFamily="@font/open_24"
+                                        android:text="@string/_000"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingHorizontal="4sp">
+
+                                    <TextView
+                                        android:id="@+id/mapmainOdo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10sp"
+                                        android:fontFamily="@font/open_24"
+                                        android:text="@string/_000"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_map_pointer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/pointer" />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/main_arrow_up_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="2sp">
+
+                    <ImageView
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_arrow_up" />
+                </RelativeLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>
