@@ -22,8 +22,8 @@ public class MyApplication extends Application {
     public static float cur_odo = 0f;
     public static Date odo_save_time = null;
     public static boolean mine = false;
-    public static String app_version = "1.0.0";
-    public static String app_date = "2020.12.15";
+    public static String app_version = "1.0.4";
+    public static String app_date = "2021.4.3";
 
 
     public void attachBaseContext(Context context) {
